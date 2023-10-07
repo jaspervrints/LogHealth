@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: 8.0.100-rc.1.23463.5
     - name: Install MAUI workload
-      run: dotnet workload install android-maui --include-previews
+      run: dotnet workload install android --include-previews
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
